@@ -1,0 +1,143 @@
+
+import React, { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
+import { Menu, X, Bot } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
+
+const AINavbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    document.body.style.overflow = !isMenuOpen ? 'hidden' : '';
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    document.body.style.overflow = '';
+  };
+
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Contact", path: "/contact" },
+    { name: "Careers", path: "/careers" },
+  ];
+
+  return (
+    <header
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 py-3 md:py-4 transition-all duration-300",
+        isScrolled 
+          ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-blue-100" 
+          : "bg-transparent"
+      )}
+    >
+      <div className="container flex items-center justify-between px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <Link 
+          to="/" 
+          className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
+          onClick={closeMenu}
+        >
+          <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+            <Bot className="w-5 h-5 text-white" />
+          </div>
+          <span className="font-display text-xl font-bold text-gray-900">AI-tamate</span>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex space-x-8">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              className={cn(
+                "relative text-gray-700 hover:text-blue-600 py-2 transition-colors duration-300 font-medium",
+                "after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all hover:after:w-full",
+                location.pathname === item.path && "text-blue-600 after:w-full"
+              )}
+            >
+              {item.name}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="hidden md:flex items-center space-x-4">
+          <Link
+            to="/newsletter"
+            className="px-4 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-300"
+          >
+            Newsletter
+          </Link>
+          <Link
+            to="/contact"
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+          >
+            Get Started
+          </Link>
+        </div>
+
+        {/* Mobile menu button */}
+        <button 
+          className="md:hidden text-gray-700 p-2 focus:outline-none" 
+          onClick={toggleMenu}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Navigation */}
+      <div className={cn(
+        "fixed inset-0 z-40 bg-white flex flex-col pt-20 px-6 md:hidden transition-all duration-300 ease-in-out",
+        isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
+      )}>
+        <nav className="flex flex-col space-y-6 items-center mt-8">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              className={cn(
+                "text-xl font-medium py-3 px-6 w-full text-center rounded-lg transition-colors",
+                location.pathname === item.path 
+                  ? "text-blue-600 bg-blue-50" 
+                  : "text-gray-700 hover:bg-gray-100"
+              )}
+              onClick={closeMenu}
+            >
+              {item.name}
+            </Link>
+          ))}
+          <Link
+            to="/newsletter"
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-50"
+            onClick={closeMenu}
+          >
+            Newsletter
+          </Link>
+          <Link
+            to="/contact"
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg bg-blue-600 text-white hover:bg-blue-700"
+            onClick={closeMenu}
+          >
+            Get Started
+          </Link>
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default AINavbar;
