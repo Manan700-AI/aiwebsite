@@ -1,8 +1,8 @@
-
 import React from "react";
 import AINavbar from "@/components/AINavbar";
 import AIFooter from "@/components/AIFooter";
 import AIChatbot from "@/components/AIChatbot";
+import AuthButton from "@/components/AuthButton";
 import { Link } from "react-router-dom";
 import { Bot, Brain, Zap, Users, ArrowRight, CheckCircle } from "lucide-react";
 
@@ -36,12 +36,7 @@ const Index = () => {
               >
                 Explore Services <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
-              <Link 
-                to="/contact"
-                className="inline-flex items-center px-8 py-4 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-medium"
-              >
-                Start Conversation
-              </Link>
+              <AuthButton />
             </div>
           </div>
           

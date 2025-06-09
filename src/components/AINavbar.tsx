@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X, Bot } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import AuthButton from "./AuthButton";
 
 const AINavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -81,12 +82,7 @@ const AINavbar = () => {
           >
             Newsletter
           </Link>
-          <Link
-            to="/contact"
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
-          >
-            Get Started
-          </Link>
+          <AuthButton />
         </div>
 
         {/* Mobile menu button */}
@@ -127,13 +123,9 @@ const AINavbar = () => {
           >
             Newsletter
           </Link>
-          <Link
-            to="/contact"
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg bg-blue-600 text-white hover:bg-blue-700"
-            onClick={closeMenu}
-          >
-            Get Started
-          </Link>
+          <div className="mt-4">
+            <AuthButton />
+          </div>
         </nav>
       </div>
     </header>
