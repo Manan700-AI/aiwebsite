@@ -34,7 +34,6 @@ const AINavbar = () => {
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
     { name: "Contact", path: "/contact" },
-    { name: "Careers", path: "/careers" },
   ];
 
   return (

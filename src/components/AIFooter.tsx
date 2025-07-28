@@ -40,7 +40,6 @@ const AIFooter = () => {
               <li><Link to="/about" className="hover:text-blue-400 transition-colors">About Us</Link></li>
               <li><Link to="/services" className="hover:text-blue-400 transition-colors">Services</Link></li>
               <li><Link to="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
-              <li><Link to="/careers" className="hover:text-blue-400 transition-colors">Careers</Link></li>
             </ul>
           </div>
 
