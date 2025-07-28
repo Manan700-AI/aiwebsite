@@ -1,41 +1,41 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
-import chatbotHero from "@/assets/chatbot-hero.jpg";
-import voiceAgent from "@/assets/voice-agent.jpg";
-import automation from "@/assets/automation.jpg";
-import processAudit from "@/assets/process-audit.jpg";
-import aiTraining from "@/assets/ai-training.jpg";
+import chatbotDashboard from "@/assets/chatbot-dashboard.jpg";
+import voiceAiTech from "@/assets/voice-ai-tech.jpg";
+import automationWorkflow from "@/assets/automation-workflow.jpg";
+import auditAnalytics from "@/assets/audit-analytics.jpg";
+import aiTrainingSession from "@/assets/ai-training-session.jpg";
 
 const ServicesSection = () => {
   const services = [
     {
       title: "24/7 Conversational AI for Smarter Customer Support",
       description: "Deploy intelligent chatbots that automate customer interactions, handle FAQs, and enhance user experience with real-time support.",
-      imageSrc: chatbotHero,
+      imageSrc: chatbotDashboard,
       imageAlt: "AI Chatbot Interface"
     },
     {
       title: "Human-like Voice AI for Seamless Customer Conversations",
       description: "Build voice assistants that speak fluently, resolve queries naturally, and deliver a smooth omnichannel support experience.",
-      imageSrc: voiceAgent,
+      imageSrc: voiceAiTech,
       imageAlt: "Voice AI Agent"
     },
     {
       title: "Automate Repetitive Tasks & Maximize Efficiency",
       description: "Leverage AI to streamline operations, reduce manual work, and enhance productivity through process automation workflows.",
-      imageSrc: automation,
+      imageSrc: automationWorkflow,
       imageAlt: "AI Process Automation"
     },
     {
       title: "Deep AI-Powered Insight into Your Business Processes",
       description: "We analyze your end-to-end operations using AI to uncover inefficiencies, suggest improvements, and future-proof your workflows.",
-      imageSrc: processAudit,
+      imageSrc: auditAnalytics,
       imageAlt: "Business Process Audit"
     },
     {
       title: "Empower Your Team with the Power of AI Tools",
       description: "We train your staff on industry-leading AI tools tailored to your business needs—no prior technical knowledge required.",
-      imageSrc: aiTraining,
+      imageSrc: aiTrainingSession,
       imageAlt: "AI Tool Training"
     }
   ];
