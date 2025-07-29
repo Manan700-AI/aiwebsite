@@ -84,7 +84,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email Us</h3>
-                    <p className="text-gray-600">info@ai-tamate.com</p>
+                    <p className="text-gray-600">rj@aitamate.com</p>
                     <p className="text-gray-500 text-sm">We respond within 24 hours</p>
                   </div>
                 </div>
@@ -95,8 +95,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Call Us</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-gray-500 text-sm">Mon-Fri, 9AM-6PM PST</p>
+                    <p className="text-gray-600">+91 92233 15977</p>
+                    <p className="text-gray-500 text-sm">Mon-Fri, 9AM-6PM IST</p>
                   </div>
                 </div>
                 
@@ -106,7 +106,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Visit Us</h3>
-                    <p className="text-gray-600">123 AI Street<br />San Francisco, CA 94105</p>
+                    <p className="text-gray-600">Thane (W), Mumbai,<br />400615, India</p>
                     <p className="text-gray-500 text-sm">By appointment only</p>
                   </div>
                 </div>
@@ -118,8 +118,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
                     <p className="text-gray-600">
-                      Monday - Friday: 9:00 AM - 6:00 PM PST<br />
-                      Saturday: 10:00 AM - 4:00 PM PST<br />
+                      Monday - Friday: 9:00 AM - 6:00 PM IST<br />
+                      Saturday: 10:00 AM - 4:00 PM IST<br />
                       Sunday: Closed
                     </p>
                   </div>

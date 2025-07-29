@@ -46,10 +46,7 @@ const About = () => {
                 <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
               </div>
               <p className="text-lg text-gray-600 mb-6">
-                To empower businesses worldwide with cutting-edge AI solutions that drive 
-                innovation, efficiency, and growth. We believe that every organization, 
-                regardless of size, should have access to the transformative power of 
-                artificial intelligence.
+                To catalyze AI-adoption and make intelligent process optimization accessible to businesses of all sizes.
               </p>
               <p className="text-gray-600">
                 Through our comprehensive training programs and intelligent automation 
@@ -89,8 +86,7 @@ const About = () => {
                 <Eye className="w-8 h-8 text-blue-600 mb-4" />
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
                 <p className="text-gray-600 mb-4">
-                  To create a world where AI amplifies human potential and drives 
-                  sustainable business growth across all industries.
+                  To unleash human creativity with the power of augmented intelligence.
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center">
@@ -112,29 +108,55 @@ const About = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Our Core Values
               </h2>
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <Award className="w-6 h-6 text-blue-600 mt-1 mr-3 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Excellence</h4>
-                    <p className="text-gray-600">We deliver exceptional quality in every solution we create.</p>
-                  </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="text-center p-4">
+                  <h4 className="font-semibold text-gray-900">Integrity & Transparency</h4>
                 </div>
-                <div className="flex items-start">
-                  <Users className="w-6 h-6 text-blue-600 mt-1 mr-3 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Collaboration</h4>
-                    <p className="text-gray-600">We work closely with our clients to understand their unique needs.</p>
-                  </div>
+                <div className="text-center p-4">
+                  <h4 className="font-semibold text-gray-900">Innovation</h4>
                 </div>
-                <div className="flex items-start">
-                  <Brain className="w-6 h-6 text-blue-600 mt-1 mr-3 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">Innovation</h4>
-                    <p className="text-gray-600">We stay at the forefront of AI technology and methodologies.</p>
-                  </div>
+                <div className="text-center p-4">
+                  <h4 className="font-semibold text-gray-900">Human-centricity</h4>
+                </div>
+                <div className="text-center p-4">
+                  <h4 className="font-semibold text-gray-900">Growth</h4>
+                </div>
+                <div className="text-center p-4">
+                  <h4 className="font-semibold text-gray-900">Excellence</h4>
+                </div>
+                <div className="text-center p-4">
+                  <h4 className="font-semibold text-gray-900">Agility</h4>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Achievements */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Key Achievements
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Milestones that showcase our global impact and innovation leadership.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-blue-600 mb-4">Global Training Impact</h3>
+              <p className="text-gray-600">
+                Conducted Technical Trainings to teams in 11 countries, spreading AI knowledge and expertise across diverse markets and cultures.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-blue-600 mb-4">Market-Leading Innovation</h3>
+              <p className="text-gray-600">
+                Developed a market leading Recruitment assisting app that reduces time to hire significantly while enhancing the quality of hires.
+              </p>
             </div>
           </div>
         </div>

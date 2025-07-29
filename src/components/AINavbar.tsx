@@ -75,12 +75,6 @@ const AINavbar = () => {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Link
-            to="/newsletter"
-            className="px-4 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-300"
-          >
-            Newsletter
-          </Link>
           <AuthButton />
         </div>
 
@@ -115,13 +109,6 @@ const AINavbar = () => {
               {item.name}
             </Link>
           ))}
-          <Link
-            to="/newsletter"
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-50"
-            onClick={closeMenu}
-          >
-            Newsletter
-          </Link>
           <div className="mt-4">
             <AuthButton />
           </div>

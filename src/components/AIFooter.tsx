@@ -21,13 +21,13 @@ const AIFooter = () => {
               Transform your organization with cutting-edge artificial intelligence.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://linkedin.com/company/ai-tamate" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://twitter.com/aitamate" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="https://github.com/ai-tamate" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Github className="w-5 h-5" />
               </a>
             </div>
@@ -49,35 +49,20 @@ const AIFooter = () => {
             <ul className="space-y-3">
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-blue-400" />
-                <span>info@ai-tamate.com</span>
+                <span>rj@aitamate.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-blue-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 92233 15977</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4 text-blue-400" />
-                <span>San Francisco, CA</span>
+                <span>Thane (W), Mumbai, India</span>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Newsletter Signup */}
-        <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <h3 className="font-semibold text-white mb-2">Stay Updated</h3>
-              <p className="text-gray-400">Subscribe to our newsletter for AI insights and updates.</p>
-            </div>
-            <Link
-              to="/newsletter"
-              className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              Subscribe Now
-            </Link>
-          </div>
-        </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
@@ -85,9 +70,9 @@ const AIFooter = () => {
             © 2024 AI-tamate. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Terms of Service</a>
-            <a href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Cookie Policy</a>
+            <Link to="/contact" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Privacy Policy</Link>
+            <Link to="/contact" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Terms of Service</Link>
+            <Link to="/contact" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

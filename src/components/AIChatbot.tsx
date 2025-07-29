@@ -59,7 +59,7 @@ const AIChatbot = () => {
     } else if (input.includes("price") || input.includes("cost")) {
       return "Our pricing varies based on your specific needs. I'd recommend contacting our team for a personalized quote. Would you like me to connect you with a specialist?";
     } else if (input.includes("contact") || input.includes("talk")) {
-      return "You can reach us through our Contact page, email us at info@ai-tamate.com, or call us at +1 (555) 123-4567. Our team is ready to help!";
+      return "You can reach us through our Contact page, email us at rj@aitamate.com, or call us at +91 92233 15977. Our team is ready to help!";
     } else {
       return "That's a great question! I'd be happy to help you explore our AI solutions. You can learn more about our services on our Services page, or feel free to ask me anything specific.";
     }
