@@ -5,6 +5,8 @@ import AIFooter from "@/components/AIFooter";
 import AIChatbot from "@/components/AIChatbot";
 import { Link } from "react-router-dom";
 import { Brain, Zap, Users, BookOpen, Cog, TrendingUp, CheckCircle, ArrowRight } from "lucide-react";
+import brightTrainingSession from "@/assets/bright-training-session.jpg";
+import brightAutomation from "@/assets/bright-automation.jpg";
 
 const Services = () => {
   return (
@@ -78,6 +80,15 @@ const Services = () => {
                 </div>
               </div>
               
+              <div className="relative mb-6">
+                <img 
+                  src={brightTrainingSession}
+                  alt="AI Training Session"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent rounded-lg"></div>
+              </div>
+              
               <div className="bg-blue-50 rounded-lg p-4 mb-6">
                 <h4 className="font-semibold text-blue-900 mb-2">Success Stories</h4>
                 <p className="text-blue-800 text-sm">
@@ -138,6 +149,15 @@ const Services = () => {
                     <li className="flex items-center"><CheckCircle className="w-3 h-3 text-green-500 mr-2" />Automated reporting systems</li>
                   </ul>
                 </div>
+              </div>
+              
+              <div className="relative mb-6">
+                <img 
+                  src={brightAutomation}
+                  alt="AI Automation Process"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent rounded-lg"></div>
               </div>
               
               <div className="bg-green-50 rounded-lg p-4 mb-6">

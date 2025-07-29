@@ -4,6 +4,8 @@ import AINavbar from "@/components/AINavbar";
 import AIFooter from "@/components/AIFooter";
 import AIChatbot from "@/components/AIChatbot";
 import { Target, Eye, Award, Users, Brain, Zap } from "lucide-react";
+import brightTeamCollaboration from "@/assets/bright-team-collaboration.jpg";
+import brightOfficeBuilding from "@/assets/bright-office-building.jpg";
 
 const About = () => {
   return (
@@ -30,6 +32,14 @@ const About = () => {
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <img 
+                src={brightTeamCollaboration}
+                alt="Team collaboration"
+                className="w-full h-80 object-cover rounded-2xl shadow-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-2xl"></div>
+            </div>
             <div>
               <div className="flex items-center mb-6">
                 <Target className="w-8 h-8 text-blue-600 mr-3" />
@@ -66,6 +76,14 @@ const About = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 relative">
+              <img 
+                src={brightOfficeBuilding}
+                alt="Modern office building"
+                className="w-full h-80 object-cover rounded-2xl shadow-lg mb-6"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-2xl"></div>
+            </div>
             <div className="order-2 lg:order-1">
               <div className="bg-white rounded-2xl p-8 shadow-lg">
                 <Eye className="w-8 h-8 text-blue-600 mb-4" />

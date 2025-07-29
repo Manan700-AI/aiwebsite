@@ -7,7 +7,8 @@ import ServicesSection from "@/components/ServicesSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import { Link } from "react-router-dom";
 import { Bot, Brain, Zap, Users, ArrowRight, CheckCircle, Star, Award } from "lucide-react";
-import aiDashboardHero from "@/assets/ai-dashboard-hero.jpg";
+import aiDashboardHero from "@/assets/bright-ai-dashboard.jpg";
+import FAQSection from "@/components/FAQSection";
 
 const Index = () => {
   return (
@@ -164,6 +165,9 @@ const Index = () => {
 
       {/* Testimonials Section */}
       <TestimonialSection />
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 relative overflow-hidden">
