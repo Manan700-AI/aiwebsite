@@ -52,9 +52,9 @@ const AINavbar = () => {
           onClick={closeMenu}
         >
           <img 
-            src="/aitamate-logo.png" 
+            src="/lovable-uploads/aa574aed-c888-4819-8024-b4cc756f0b44.png" 
             alt="AI-tamate Logo" 
-            className="w-8 h-8 object-contain"
+            className="w-10 h-10 object-contain"
           />
           <span className="font-display text-xl font-bold text-gray-900">AI-tamate</span>
         </Link>

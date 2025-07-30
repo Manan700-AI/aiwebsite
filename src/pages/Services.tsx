@@ -4,9 +4,10 @@ import AINavbar from "@/components/AINavbar";
 import AIFooter from "@/components/AIFooter";
 import AIChatbot from "@/components/AIChatbot";
 import { Link } from "react-router-dom";
-import { Brain, Zap, Users, BookOpen, Cog, TrendingUp, CheckCircle, ArrowRight } from "lucide-react";
+import { Brain, Zap, Users, BookOpen, Cog, TrendingUp, CheckCircle, ArrowRight, Search, BarChart3, Target, FileText } from "lucide-react";
 import brightTrainingSession from "@/assets/bright-training-session.jpg";
 import brightAutomation from "@/assets/bright-automation.jpg";
+import brightProcessAudit from "@/assets/bright-process-audit.jpg";
 
 const Services = () => {
   return (
@@ -32,7 +33,7 @@ const Services = () => {
       {/* Main Services */}
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12">
             
             {/* AI Training Services */}
             <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
@@ -173,6 +174,92 @@ const Services = () => {
                 className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors w-full justify-center"
               >
                 Explore Automation <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Process Audit */}
+            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                  <Search className="w-6 h-6 text-blue-600" />
+                </div>
+                <h2 className="text-2xl font-bold text-gray-900">Process Audit</h2>
+              </div>
+              
+              <p className="text-gray-600 mb-6">
+                Comprehensive analysis of your current operations to identify AI automation 
+                opportunities and optimization potential for maximum ROI.
+              </p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="border border-gray-200 rounded-lg p-4">
+                  <div className="flex items-center mb-2">
+                    <BarChart3 className="w-5 h-5 text-blue-600 mr-2" />
+                    <h3 className="font-semibold text-gray-900">Current State Assessment</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm mb-3">
+                    In-depth analysis of your existing business processes and workflows.
+                  </p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li className="flex items-center"><CheckCircle className="w-3 h-3 text-green-500 mr-2" />Process mapping and documentation</li>
+                    <li className="flex items-center"><CheckCircle className="w-3 h-3 text-green-500 mr-2" />Bottleneck identification</li>
+                    <li className="flex items-center"><CheckCircle className="w-3 h-3 text-green-500 mr-2" />Efficiency metrics analysis</li>
+                  </ul>
+                </div>
+                
+                <div className="border border-gray-200 rounded-lg p-4">
+                  <div className="flex items-center mb-2">
+                    <Target className="w-5 h-5 text-blue-600 mr-2" />
+                    <h3 className="font-semibold text-gray-900">AI Readiness Evaluation</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm mb-3">
+                    Assessment of your organization's readiness for AI implementation.
+                  </p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li className="flex items-center"><CheckCircle className="w-3 h-3 text-green-500 mr-2" />Technology infrastructure review</li>
+                    <li className="flex items-center"><CheckCircle className="w-3 h-3 text-green-500 mr-2" />Data quality assessment</li>
+                    <li className="flex items-center"><CheckCircle className="w-3 h-3 text-green-500 mr-2" />Team capability evaluation</li>
+                  </ul>
+                </div>
+
+                <div className="border border-gray-200 rounded-lg p-4">
+                  <div className="flex items-center mb-2">
+                    <FileText className="w-5 h-5 text-blue-600 mr-2" />
+                    <h3 className="font-semibold text-gray-900">ROI Projections & Roadmap</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm mb-3">
+                    Detailed implementation roadmap with clear ROI projections.
+                  </p>
+                  <ul className="space-y-1 text-sm text-gray-600">
+                    <li className="flex items-center"><CheckCircle className="w-3 h-3 text-green-500 mr-2" />Cost-benefit analysis</li>
+                    <li className="flex items-center"><CheckCircle className="w-3 h-3 text-green-500 mr-2" />Implementation timeline</li>
+                    <li className="flex items-center"><CheckCircle className="w-3 h-3 text-green-500 mr-2" />Risk assessment and mitigation</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="relative mb-6">
+                <img 
+                  src={brightProcessAudit}
+                  alt="Business Process Audit"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent rounded-lg"></div>
+              </div>
+              
+              <div className="bg-purple-50 rounded-lg p-4 mb-6">
+                <h4 className="font-semibold text-purple-900 mb-2">Audit Benefits</h4>
+                <p className="text-purple-800 text-sm">
+                  Our comprehensive process audits typically identify 3-5 major automation 
+                  opportunities with potential cost savings of 30-50% in targeted areas.
+                </p>
+              </div>
+              
+              <Link 
+                to="/contact"
+                className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors w-full justify-center"
+              >
+                Request Process Audit <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
           </div>
