@@ -110,7 +110,7 @@ const Hero = () => {
             </div>
             
             <h1 
-              className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in" 
+              className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in transform translate-y-8" 
               style={{ animationDelay: "0.3s" }}
             >
               Atlas: Where Code<br className="hidden sm:inline" />Meets Motion
@@ -118,18 +118,18 @@ const Hero = () => {
             
             <p 
               style={{ animationDelay: "0.5s" }} 
-              className="section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 leading-relaxed opacity-0 animate-fade-in text-gray-950 font-normal text-base sm:text-lg text-left"
+              className="section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 leading-relaxed opacity-0 animate-fade-in transform translate-y-8 text-gray-950 font-normal text-base sm:text-lg text-left"
             >
               The humanoid companion that learns and adapts alongside you.
             </p>
             
             <div 
-              className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in" 
+              className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in transform translate-y-8" 
               style={{ animationDelay: "0.7s" }}
             >
               <a 
                 href="/contact" 
-                className="flex items-center justify-center group w-full sm:w-auto text-center"
+                className="flex items-center justify-center group w-full sm:w-auto text-center hover-scale transition-all duration-300"
                 style={{
                   backgroundColor: '#FE5C02',
                   borderRadius: '1440px',

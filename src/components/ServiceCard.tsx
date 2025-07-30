@@ -14,8 +14,8 @@ const ServiceCard = ({ title, description, imageSrc, imageAlt, index }: ServiceC
     <div 
       className={cn(
         "bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden group",
-        "transform hover:-translate-y-2 hover:scale-[1.02]",
-        "opacity-0 animate-fade-in"
+        "transform hover:-translate-y-3 hover:scale-[1.03] hover:rotate-1",
+        "opacity-0 animate-fade-in animate-scale-in"
       )}
       style={{ animationDelay: `${index * 0.2}s` }}
     >
@@ -36,7 +36,7 @@ const ServiceCard = ({ title, description, imageSrc, imageAlt, index }: ServiceC
           {description}
         </p>
         
-        <div className="mt-4 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-500"></div>
+        <div className="mt-4 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-800 group-hover:w-full transition-all duration-500 animate-pulse"></div>
       </div>
     </div>
   );

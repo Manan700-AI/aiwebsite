@@ -52,7 +52,7 @@ const AINavbar = () => {
           onClick={closeMenu}
         >
           <img 
-            src="/lovable-uploads/22d31f51-c174-40a7-bd95-00e4ad00eaf3.png" 
+            src="/aitamate-logo.png" 
             alt="AI-tamate Logo" 
             className="w-8 h-8 object-contain"
           />

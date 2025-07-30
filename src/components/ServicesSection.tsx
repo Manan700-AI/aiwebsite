@@ -54,14 +54,14 @@ const ServicesSection = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6 opacity-0 animate-fade-in">
+          <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6 opacity-0 animate-fade-in transform translate-y-4">
             Our AI Solutions
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 opacity-0 animate-fade-in transform translate-y-4" style={{ animationDelay: "0.2s" }}>
             Transform Your Business with
-            <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent"> Intelligent AI</span>
+            <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent animate-pulse"> Intelligent AI</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto opacity-0 animate-fade-in transform translate-y-4" style={{ animationDelay: "0.4s" }}>
             Discover our comprehensive suite of AI-powered solutions designed to revolutionize 
             your business operations and drive unprecedented growth.
           </p>
