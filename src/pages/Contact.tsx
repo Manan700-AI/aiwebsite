@@ -119,8 +119,7 @@ const Contact = () => {
                     <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
                     <p className="text-gray-600">
                       Monday - Friday: 9:00 AM - 6:00 PM IST<br />
-                      Saturday: 10:00 AM - 4:00 PM IST<br />
-                      Sunday: Closed
+                      Saturday - Sunday: Closed
                     </p>
                   </div>
                 </div>

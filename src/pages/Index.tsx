@@ -46,7 +46,12 @@ const Index = () => {
                 >
                   Explore Services <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
-                <AuthButton />
+                <Link 
+                  to="/about"
+                  className="inline-flex items-center px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300 font-medium"
+                >
+                  Learn More
+                </Link>
               </div>
               
               {/* Trust indicators */}
@@ -57,7 +62,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center text-gray-600">
                   <Award className="w-5 h-5 text-blue-600 mr-1" />
-                  <span className="text-sm font-medium">500+ Companies</span>
+                  <span className="text-sm font-medium">15+ Companies</span>
                 </div>
               </div>
             </div>
@@ -213,7 +218,7 @@ const Index = () => {
               </div>
               <div className="flex items-center">
                 <Users className="w-5 h-5 mr-2" />
-                <span className="text-sm">500+ Clients</span>
+                <span className="text-sm">1000+ Professionals Trained</span>
               </div>
             </div>
           </div>

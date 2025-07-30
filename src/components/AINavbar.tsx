@@ -51,9 +51,11 @@ const AINavbar = () => {
           className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
           onClick={closeMenu}
         >
-          <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-            <Bot className="w-5 h-5 text-white" />
-          </div>
+          <img 
+            src="/lovable-uploads/22d31f51-c174-40a7-bd95-00e4ad00eaf3.png" 
+            alt="AI-tamate Logo" 
+            className="w-8 h-8 object-contain"
+          />
           <span className="font-display text-xl font-bold text-gray-900">AI-tamate</span>
         </Link>
 
@@ -75,7 +77,7 @@ const AINavbar = () => {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <AuthButton />
+          {/* Removed AuthButton as requested */}
         </div>
 
         {/* Mobile menu button */}
@@ -109,9 +111,7 @@ const AINavbar = () => {
               {item.name}
             </Link>
           ))}
-          <div className="mt-4">
-            <AuthButton />
-          </div>
+          {/* Removed AuthButton from mobile menu as requested */}
         </nav>
       </div>
     </header>

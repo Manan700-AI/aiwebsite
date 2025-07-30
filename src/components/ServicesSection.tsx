@@ -1,41 +1,47 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
-import chatbotHero from "@/assets/chatbot-hero.jpg";
-import voiceAgent from "@/assets/voice-agent.jpg";
-import automation from "@/assets/automation.jpg";
-import processAudit from "@/assets/process-audit.jpg";
-import aiTraining from "@/assets/ai-training.jpg";
+import brightChatbot from "@/assets/bright-chatbot-interface.jpg";
+import brightVoiceAI from "@/assets/bright-voice-ai.jpg";
+import brightAutomation from "@/assets/bright-automation-flow.jpg";
+import brightProcessAudit from "@/assets/bright-process-audit.jpg";
+import brightAITraining from "@/assets/bright-ai-training.jpg";
 
 const ServicesSection = () => {
   const services = [
     {
       title: "24/7 Conversational AI for Smarter Customer Support",
       description: "Deploy intelligent chatbots that automate customer interactions, handle FAQs, and enhance user experience with real-time support.",
-      imageSrc: chatbotHero,
+      imageSrc: brightChatbot,
       imageAlt: "AI Chatbot Interface"
     },
     {
       title: "Human-like Voice AI for Seamless Customer Conversations",
       description: "Build voice assistants that speak fluently, resolve queries naturally, and deliver a smooth omnichannel support experience.",
-      imageSrc: voiceAgent,
+      imageSrc: brightVoiceAI,
       imageAlt: "Voice AI Agent"
     },
     {
       title: "Automate Repetitive Tasks & Maximize Efficiency",
       description: "Leverage AI to streamline operations, reduce manual work, and enhance productivity through process automation workflows.",
-      imageSrc: automation,
+      imageSrc: brightAutomation,
       imageAlt: "AI Process Automation"
+    },
+    {
+      title: "Process Audit",
+      description: "Comprehensive analysis of your current operations to identify AI automation opportunities and optimization potential. Current state assessment, AI readiness evaluation, ROI projections, and implementation roadmap.",
+      imageSrc: brightProcessAudit,
+      imageAlt: "Business Process Audit"
     },
     {
       title: "Deep AI-Powered Insight into Your Business Processes",
       description: "We analyze your end-to-end operations using AI to uncover inefficiencies, suggest improvements, and future-proof your workflows.",
-      imageSrc: processAudit,
-      imageAlt: "Business Process Audit"
+      imageSrc: brightProcessAudit,
+      imageAlt: "Business Process Analysis"
     },
     {
       title: "Empower Your Team with the Power of AI Tools",
       description: "We train your staff on industry-leading AI tools tailored to your business needs—no prior technical knowledge required.",
-      imageSrc: aiTraining,
+      imageSrc: brightAITraining,
       imageAlt: "AI Tool Training"
     }
   ];
