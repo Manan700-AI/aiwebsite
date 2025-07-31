@@ -4,6 +4,7 @@ import brightChatbot from "@/assets/bright-chatbot-interface.jpg";
 import brightVoiceAI from "@/assets/bright-voice-ai.jpg";
 import brightAutomation from "@/assets/bright-automation-flow.jpg";
 import brightProcessAudit from "@/assets/bright-process-audit.jpg";
+import brightBusinessInsights from "@/assets/bright-business-insights.jpg";
 import brightAITraining from "@/assets/bright-ai-training.jpg";
 
 const ServicesSection = () => {
@@ -35,7 +36,7 @@ const ServicesSection = () => {
     {
       title: "Deep AI-Powered Insight into Your Business Processes",
       description: "We analyze your end-to-end operations using AI to uncover inefficiencies, suggest improvements, and future-proof your workflows.",
-      imageSrc: brightProcessAudit,
+      imageSrc: brightBusinessInsights,
       imageAlt: "Business Process Analysis"
     },
     {
@@ -48,9 +49,10 @@ const ServicesSection = () => {
 
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full opacity-20 blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-200 rounded-full opacity-30 blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+      {/* Background decorative elements with animations */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full opacity-20 blur-3xl -translate-y-1/2 translate-x-1/2 animate-pulse"></div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-200 rounded-full opacity-30 blur-3xl translate-y-1/2 -translate-x-1/2 animate-pulse" style={{ animationDelay: "1s" }}></div>
+      <div className="absolute top-1/3 left-1/4 w-40 h-40 bg-gradient-to-r from-blue-300 to-transparent rounded-full opacity-10 blur-2xl animate-bounce" style={{ animationDuration: "3s" }}></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         <div className="text-center mb-16">
