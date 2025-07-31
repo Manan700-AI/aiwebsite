@@ -53,10 +53,10 @@ const AINavbar = () => {
         >
           <img 
             src="/lovable-uploads/1e29f5f8-2704-4bdc-8b03-b492ed2cfdc9.png" 
-            alt="AI-tamate Logo" 
+            alt="automate Logo" 
             className="w-12 h-12 object-contain"
           />
-          <span className="font-display text-xl font-bold text-gray-900">AI-tamate</span>
+          <span className="font-display text-xl font-bold text-gray-900">automate</span>
         </Link>
 
         {/* Desktop Navigation */}

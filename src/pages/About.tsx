@@ -18,7 +18,7 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About AI-tamate
+              About automate
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We're on a mission to democratize AI and make intelligent automation 
@@ -58,7 +58,7 @@ const About = () => {
               <h3 className="text-2xl font-bold mb-4">Why We Started</h3>
               <p className="text-blue-100 mb-4">
                 Founded by AI experts who witnessed the gap between AI potential and 
-                real-world implementation, AI-tamate was created to bridge this divide.
+                real-world implementation, automate was created to bridge this divide.
               </p>
               <p className="text-blue-100">
                 We've helped over 500+ companies successfully integrate AI into their 

@@ -15,7 +15,7 @@ const AIChatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: "Hello! I'm your AI assistant. How can I help you learn more about AI-tamate's services?",
+      text: "Hi there! How can I assist you today?",
       isBot: true,
       timestamp: new Date(),
     },
@@ -50,18 +50,34 @@ const AIChatbot = () => {
   const generateBotResponse = (userInput: string): string => {
     const input = userInput.toLowerCase();
     
-    if (input.includes("service") || input.includes("what")) {
-      return "We offer AI Training Services for individuals and corporations, plus AI-Enabled Automations for workflow optimization. Would you like to know more about either?";
+    // System 1: Greetings
+    if (input.includes("hi") || input.includes("hello") || input.includes("hey") || input === "hi" || input === "hello") {
+      const greetings = [
+        "Hi there! How can I assist you today?",
+        "Hello! I'm here to help you with anything related to our services or offerings.",
+        "Welcome to our website! Feel free to ask me any questions you have."
+      ];
+      return greetings[Math.floor(Math.random() * greetings.length)];
+    }
+    
+    // System 2: Website-Based Q&A
+    if (input.includes("service") || input.includes("what do you") || input.includes("what you") || input.includes("what")) {
+      return "We offer three main services:\n• AI Training Services - Corporate workshops, individual courses, and certification programs\n• AI-Enabled Automations - Workflow optimization and process automation\n• Process Audit - Deep analysis of your business processes using AI to uncover inefficiencies\n\nWould you like to know more about any specific service?";
     } else if (input.includes("training")) {
-      return "Our AI Training programs include corporate workshops, individual courses, and certification programs. We cover machine learning, automation, and AI implementation strategies.";
+      return "Our AI Training programs include:\n• Corporate workshops for teams\n• Individual certification courses\n• Machine learning fundamentals\n• AI implementation strategies\n• Hands-on practical sessions\n\nWe focus on practical implementation and real-world applications.";
     } else if (input.includes("automation")) {
-      return "Our AI-Enabled Automations help streamline business processes, reduce manual work, and increase efficiency. We can automate workflows, data processing, and customer interactions.";
-    } else if (input.includes("price") || input.includes("cost")) {
-      return "Our pricing varies based on your specific needs. I'd recommend contacting our team for a personalized quote. Would you like me to connect you with a specialist?";
-    } else if (input.includes("contact") || input.includes("talk")) {
-      return "You can reach us through our Contact page, email us at rj@aitamate.com, or call us at +91 92233 15977. Our team is ready to help!";
+      return "Our AI-Enabled Automations help:\n• Streamline business processes\n• Reduce manual work and errors\n• Increase operational efficiency\n• Automate workflows and data processing\n• Improve customer interactions\n\nWe customize solutions based on your specific business needs.";
+    } else if (input.includes("audit") || input.includes("process")) {
+      return "Our Process Audit service provides:\n• Current state assessment of your operations\n• AI readiness evaluation\n• Detailed improvement recommendations\n• ROI projections and implementation roadmaps\n• End-to-end operational analysis\n\nThis helps identify inefficiencies and optimization opportunities.";
+    } else if (input.includes("price") || input.includes("cost") || input.includes("pricing")) {
+      return "Our pricing varies based on your specific needs and requirements. For a personalized quote tailored to your business, please contact our team at rj@aitamate.com or call +91 92233 15977.";
+    } else if (input.includes("contact") || input.includes("talk") || input.includes("reach")) {
+      return "You can reach us through:\n• Email: rj@aitamate.com\n• Phone: +91 92233 15977\n• Contact page on our website\n\nOur team is ready to help with any questions or to discuss your specific needs!";
+    } else if (input.includes("about") || input.includes("company") || input.includes("who")) {
+      return "We are automate - AI experts dedicated to bridging the gap between AI potential and real-world implementation. We specialize in practical AI solutions, comprehensive training, and helping businesses successfully integrate AI into their operations.";
     } else {
-      return "That's a great question! I'd be happy to help you explore our AI solutions. You can learn more about our services on our Services page, or feel free to ask me anything specific.";
+      // System 3: Fallback Response
+      return "I'm sorry, I couldn't find that information on our website. You can reach out to our support team at rj@aitamate.com and they'll be happy to assist you further!";
     }
   };
 

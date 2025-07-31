@@ -93,7 +93,7 @@ const Services = () => {
               <div className="bg-blue-50 rounded-lg p-4 mb-6">
                 <h4 className="font-semibold text-blue-900 mb-2">Success Stories</h4>
                 <p className="text-blue-800 text-sm">
-                  "AI-tamate's training program transformed our team's capabilities. 
+                  "automate's training program transformed our team's capabilities. 
                   We've seen a 60% improvement in project efficiency." - Tech Director, Fortune 500 Company
                 </p>
               </div>

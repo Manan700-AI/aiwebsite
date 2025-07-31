@@ -10,7 +10,7 @@ const TestimonialSection = () => {
       name: "Sarah Chen",
       title: "CTO, TechFlow Solutions",
       company: "Fortune 500 Company",
-      content: "AI-tamate's training program transformed our team's capabilities. We've seen a 60% improvement in project efficiency and our developers are now confidently implementing AI solutions.",
+      content: "automate's training program transformed our team's capabilities. We've seen a 60% improvement in project efficiency and our developers are now confidently implementing AI solutions.",
       rating: 5,
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=150&q=80"
     },
