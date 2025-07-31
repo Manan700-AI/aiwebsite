@@ -7,7 +7,7 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "What makes automate different from other AI service providers?",
+      question: "What makes aitamate different from other AI service providers?",
       answer: "We focus on practical implementation and comprehensive training. Our team combines deep AI expertise with real-world business experience, ensuring solutions that actually work and teams that can use them effectively."
     },
     {

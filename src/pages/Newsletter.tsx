@@ -36,7 +36,7 @@ const Newsletter = () => {
     setTimeout(() => {
       toast({
         title: "Successfully subscribed!",
-        description: "Welcome to the automate newsletter. You'll receive our next update soon."
+        description: "Welcome to the aitamate newsletter. You'll receive our next update soon."
       });
       setFormData({ name: "", email: "" });
       setIsSubmitting(false);
@@ -216,7 +216,7 @@ const Newsletter = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg p-6 shadow-lg">
               <p className="text-gray-600 mb-4">
-                "The automate newsletter is my go-to source for staying current with AI trends. 
+                "The aitamate newsletter is my go-to source for staying current with AI trends. 
                 The insights have helped us make better technology decisions."
               </p>
               <div className="flex items-center">
