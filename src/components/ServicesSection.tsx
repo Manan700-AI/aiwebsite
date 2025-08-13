@@ -1,7 +1,7 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
 import brightChatbot from "@/assets/bright-chatbot-interface.jpg";
-import brightVoiceAI from "@/assets/bright-voice-ai.jpg";
+import voiceAI5Fingers from "@/assets/voice-ai-5fingers.jpg";
 import brightAutomation from "@/assets/bright-automation-flow.jpg";
 import brightProcessAudit from "@/assets/bright-process-audit.jpg";
 import brightBusinessInsights from "@/assets/bright-business-insights.jpg";
@@ -18,7 +18,7 @@ const ServicesSection = () => {
     {
       title: "Human-like Voice AI for Seamless Customer Conversations",
       description: "Build voice assistants that speak fluently, resolve queries naturally, and deliver a smooth omnichannel support experience.",
-      imageSrc: brightVoiceAI,
+      imageSrc: voiceAI5Fingers,
       imageAlt: "Voice AI Agent"
     },
     {
